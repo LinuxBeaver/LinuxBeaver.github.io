@@ -119,8 +119,8 @@ Once again to repeat myself. Ninety+ folders currently exist and some plugins de
 
 Below is a list of all GEGL Plugin pages (INCOMPLETE)
 
-[Subpage Text](./subpagetest.md)
+[Subpage Test](./subpagetest.md)
 
-[Subpage Text](./subpagetest.md)
+[Subpage Test](./subpagetest.md)
 
-[Subpage Text](./subpagetest.md)
+[Subpage Test](./subpagetest.md)
