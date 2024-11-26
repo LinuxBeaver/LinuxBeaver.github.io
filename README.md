@@ -24,8 +24,6 @@ grab.code.sh will be ran in a individual folder, which will give you the source 
 ![](github_images/untitled-1_20241125221028815.png)
 
 
-[Subpage Text](./subpagetest.md)
-
 ## Compile Guide for Linux 
 
 
@@ -48,8 +46,9 @@ sudo apt-get update
 sudo apt-get install ninja-build meson libgegl-dev
 ```
 
-### 3.
-Navigate to the plugin you want to compile unless you want to compile all of them. For example navigate to **sharp_bevel** folder because you want to compile sharp bevel from source as opposed to using my precompiled binaries.
+### 3. Find a individual plugin (instead of all of them)
+
+The website will tell you were to navigate in the main folder to the plugin you want to compile unless you want to compile all of them. For example navigate to **sharp_bevel** folder because you want to compile sharp bevel from source as opposed to using my precompiled binaries.
 
 ### 4. Compiling the Plugins (automated)
 
@@ -95,3 +94,33 @@ After copying the files, restart GIMP. The new GEGL operations should now be ava
 
 If pre-compiled binaries (.so files) are provided, you can skip the compilation steps. Just copy these .so files directly to the /home/$(whoami)/.local/share/gegl-0.4/plug-ins/ directory and restart GIMP.
 
+
+## More information about the main folder
+
+
+**build_everything_linux.sh** | compiles everything for Linux 
+
+**build_plugin_windows.sh** | compiles everything for Windows 
+
+**wrap_all_code.sh** | zips the source code of everything (runs grab_code.sh) in every folder.
+
+**clean_build_folders.sh** | deletes all build folders for mass recompiling
+
+**clean_everything.sh** | deletes all zip files, .dll, and .so files, and build folders to make the folder vanilla as it came originally
+
+
+## List of GEGL plugin pages 
+
+Clicking a link below you can preview, read and download binaries of a GEGL plugin and by following easy instructions you can navigate the main folder, look for the plugin name, run the "grab_code.sh" and this will fetch the source code all of that plugin.
+
+Assumed FAQ: Why do I need to compile/fetch the source code, that sounds sketchy?
+
+Once again to repeat myself. Ninety+ folders currently exist and some plugins depend on the same dependency many times. Instead of wrapping `bevel` and other plugins a dozen times I can make code that calls it from one "bevel" folder. This is exactly what is going on when the user fetches the source code with grab_code.sh .
+
+Below is a list of all GEGL Plugin pages (INCOMPLETE)
+
+[Subpage Text](./subpagetest.md)
+
+[Subpage Text](./subpagetest.md)
+
+[Subpage Text](./subpagetest.md)
