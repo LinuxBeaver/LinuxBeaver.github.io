@@ -115,7 +115,7 @@ Clicking a link below you can preview, read and download binaries of a GEGL plug
 
 Assumed FAQ: Why do I need to compile/fetch the source code, that sounds sketchy?
 
-Once again to repeat myself. Ninety+ folders currently exist and some plugins depend on the same dependency many times. Instead of wrapping `bevel` and other plugins a dozen times I can make code that calls it from one "bevel" folder. This is exactly what is going on when the user fetches the source code with grab_code.sh .
+Once again to repeat myself. Ninety+ folders currently exist and some plugins depend on the same dependency many times. Instead of wrapping "bevel" and other plugins a dozen times I can make code that calls it from one "bevel" folder. This is exactly what is going on when the user fetches the source code with grab_code.sh .
 
 Below is a list of all GEGL Plugin pages (INCOMPLETE)
 
